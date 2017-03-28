@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BC885E01DC1FD180087EC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC885DF1DC1FD180087EC2F /* main.m */; };
+		4BC885E31DC1FD180087EC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC885E21DC1FD180087EC2F /* AppDelegate.m */; };
+		4BC885E61DC1FD180087EC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC885E51DC1FD180087EC2F /* ViewController.m */; };
+		4BC885E91DC1FD180087EC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC885E71DC1FD180087EC2F /* Main.storyboard */; };
+		4BC885EB1DC1FD180087EC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC885EA1DC1FD180087EC2F /* Assets.xcassets */; };
+		4BC885EE1DC1FD180087EC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC885EC1DC1FD180087EC2F /* LaunchScreen.storyboard */; };
+		4BC885F91DC1FD180087EC2F /* AliyunSDKVideoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC885F81DC1FD180087EC2F /* AliyunSDKVideoTestTests.m */; };
+		4BC886041DC1FD180087EC2F /* AliyunSDKVideoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC886031DC1FD180087EC2F /* AliyunSDKVideoTestUITests.m */; };
+		4BC886151DC1FD840087EC2F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC886141DC1FD840087EC2F /* Reachability.m */; };
+		4BC8861A1DC1FD9F0087EC2F /* AliVcMoiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC886161DC1FD9F0087EC2F /* AliVcMoiveViewController.m */; };
+		4BC8861B1DC1FD9F0087EC2F /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC886191DC1FD9F0087EC2F /* VideoListViewController.m */; };
+		4BC8863C1DC1FDC00087EC2F /* 蚂蚁大战.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8863B1DC1FDC00087EC2F /* 蚂蚁大战.mp4 */; };
+		4BC8863E1DC2059B0087EC2F /* AliyunPlayerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC886111DC1FD4B0087EC2F /* AliyunPlayerSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4BC8863F1DC2059B0087EC2F /* AliyunPlayerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC886111DC1FD4B0087EC2F /* AliyunPlayerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BC886511DC208840087EC2F /* movieBackward.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886421DC208840087EC2F /* movieBackward.png */; };
+		4BC886521DC208840087EC2F /* movieBackward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886431DC208840087EC2F /* movieBackward@2x.png */; };
+		4BC886531DC208840087EC2F /* movieBackwardSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886441DC208840087EC2F /* movieBackwardSelected.png */; };
+		4BC886541DC208840087EC2F /* movieBackwardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886451DC208840087EC2F /* movieBackwardSelected@2x.png */; };
+		4BC886551DC208840087EC2F /* movieForward.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886461DC208840087EC2F /* movieForward.png */; };
+		4BC886561DC208840087EC2F /* movieForward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886471DC208840087EC2F /* movieForward@2x.png */; };
+		4BC886571DC208840087EC2F /* movieForwardSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886481DC208840087EC2F /* movieForwardSelected.png */; };
+		4BC886581DC208840087EC2F /* movieForwardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886491DC208840087EC2F /* movieForwardSelected@2x.png */; };
+		4BC886591DC208840087EC2F /* moviePause.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864A1DC208840087EC2F /* moviePause.png */; };
+		4BC8865A1DC208840087EC2F /* moviePause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864B1DC208840087EC2F /* moviePause@2x.png */; };
+		4BC8865B1DC208840087EC2F /* moviePlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864C1DC208840087EC2F /* moviePlay.png */; };
+		4BC8865C1DC208840087EC2F /* moviePlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864D1DC208840087EC2F /* moviePlay@2x.png */; };
+		4BC8865D1DC208840087EC2F /* video_brightness_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864E1DC208840087EC2F /* video_brightness_bg@2x.png */; };
+		4BC8865E1DC208840087EC2F /* video_num_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC8864F1DC208840087EC2F /* video_num_bg@2x.png */; };
+		4BC8865F1DC208840087EC2F /* video_num_front@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886501DC208840087EC2F /* video_num_front@2x.png */; };
+		4BC886611DC22C570087EC2F /* 蚂蚁大战.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4BC886601DC22C570087EC2F /* 蚂蚁大战.mov */; };
+		4BF9D45D1DC75A1200E644D5 /* XHNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9D45C1DC75A1200E644D5 /* XHNetwork.m */; };
+		E9DCB99C058A5C020A157CD1 /* libPods-AliyunSDKVideoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A5227A9D2311C541B7B5E8 /* libPods-AliyunSDKVideoTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BC885F51DC1FD180087EC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC885D31DC1FD180087EC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC885DA1DC1FD180087EC2F;
+			remoteInfo = AliyunSDKVideoTest;
+		};
+		4BC886001DC1FD180087EC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC885D31DC1FD180087EC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC885DA1DC1FD180087EC2F;
+			remoteInfo = AliyunSDKVideoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BC886401DC2059B0087EC2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4BC8863F1DC2059B0087EC2F /* AliyunPlayerSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03A5227A9D2311C541B7B5E8 /* libPods-AliyunSDKVideoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliyunSDKVideoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B45A317E03EB743DEFDCA19 /* Pods-AliyunSDKVideoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunSDKVideoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunSDKVideoTest/Pods-AliyunSDKVideoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		1E9E0CDF6A2B7BB1B6262464 /* Pods-AliyunSDKVideoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliyunSDKVideoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AliyunSDKVideoTest/Pods-AliyunSDKVideoTest.release.xcconfig"; sourceTree = "<group>"; };
+		4BC885DB1DC1FD180087EC2F /* AliyunSDKVideoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliyunSDKVideoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC885DF1DC1FD180087EC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BC885E11DC1FD180087EC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BC885E21DC1FD180087EC2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BC885E41DC1FD180087EC2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4BC885E51DC1FD180087EC2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BC885E81DC1FD180087EC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BC885EA1DC1FD180087EC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BC885ED1DC1FD180087EC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BC885EF1DC1FD180087EC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC885F41DC1FD180087EC2F /* AliyunSDKVideoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliyunSDKVideoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC885F81DC1FD180087EC2F /* AliyunSDKVideoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliyunSDKVideoTestTests.m; sourceTree = "<group>"; };
+		4BC885FA1DC1FD180087EC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC885FF1DC1FD180087EC2F /* AliyunSDKVideoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliyunSDKVideoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC886031DC1FD180087EC2F /* AliyunSDKVideoTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliyunSDKVideoTestUITests.m; sourceTree = "<group>"; };
+		4BC886051DC1FD180087EC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC886111DC1FD4B0087EC2F /* AliyunPlayerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunPlayerSDK.framework; sourceTree = "<group>"; };
+		4BC886131DC1FD840087EC2F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4BC886141DC1FD840087EC2F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4BC886161DC1FD9F0087EC2F /* AliVcMoiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliVcMoiveViewController.m; sourceTree = "<group>"; };
+		4BC886171DC1FD9F0087EC2F /* AliVcMoiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliVcMoiveViewController.h; sourceTree = "<group>"; };
+		4BC886181DC1FD9F0087EC2F /* VideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoListViewController.h; sourceTree = "<group>"; };
+		4BC886191DC1FD9F0087EC2F /* VideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoListViewController.m; sourceTree = "<group>"; };
+		4BC8863B1DC1FDC00087EC2F /* 蚂蚁大战.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蚂蚁大战.mp4"; sourceTree = "<group>"; };
+		4BC886421DC208840087EC2F /* movieBackward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieBackward.png; sourceTree = "<group>"; };
+		4BC886431DC208840087EC2F /* movieBackward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieBackward@2x.png"; sourceTree = "<group>"; };
+		4BC886441DC208840087EC2F /* movieBackwardSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieBackwardSelected.png; sourceTree = "<group>"; };
+		4BC886451DC208840087EC2F /* movieBackwardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieBackwardSelected@2x.png"; sourceTree = "<group>"; };
+		4BC886461DC208840087EC2F /* movieForward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieForward.png; sourceTree = "<group>"; };
+		4BC886471DC208840087EC2F /* movieForward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieForward@2x.png"; sourceTree = "<group>"; };
+		4BC886481DC208840087EC2F /* movieForwardSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieForwardSelected.png; sourceTree = "<group>"; };
+		4BC886491DC208840087EC2F /* movieForwardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieForwardSelected@2x.png"; sourceTree = "<group>"; };
+		4BC8864A1DC208840087EC2F /* moviePause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviePause.png; sourceTree = "<group>"; };
+		4BC8864B1DC208840087EC2F /* moviePause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moviePause@2x.png"; sourceTree = "<group>"; };
+		4BC8864C1DC208840087EC2F /* moviePlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moviePlay.png; sourceTree = "<group>"; };
+		4BC8864D1DC208840087EC2F /* moviePlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moviePlay@2x.png"; sourceTree = "<group>"; };
+		4BC8864E1DC208840087EC2F /* video_brightness_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_brightness_bg@2x.png"; sourceTree = "<group>"; };
+		4BC8864F1DC208840087EC2F /* video_num_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_num_bg@2x.png"; sourceTree = "<group>"; };
+		4BC886501DC208840087EC2F /* video_num_front@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video_num_front@2x.png"; sourceTree = "<group>"; };
+		4BC886601DC22C570087EC2F /* 蚂蚁大战.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "蚂蚁大战.mov"; sourceTree = "<group>"; };
+		4BF9D45B1DC75A1200E644D5 /* XHNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetwork.h; sourceTree = "<group>"; };
+		4BF9D45C1DC75A1200E644D5 /* XHNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNetwork.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BC885D81DC1FD180087EC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC8863E1DC2059B0087EC2F /* AliyunPlayerSDK.framework in Frameworks */,
+				E9DCB99C058A5C020A157CD1 /* libPods-AliyunSDKVideoTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885F11DC1FD180087EC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885FC1DC1FD180087EC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		476A9080F558A7176B38A214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A5227A9D2311C541B7B5E8 /* libPods-AliyunSDKVideoTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BC885D21DC1FD180087EC2F = {
+			isa = PBXGroup;
+			children = (
+				4BC885DD1DC1FD180087EC2F /* AliyunSDKVideoTest */,
+				4BC885F71DC1FD180087EC2F /* AliyunSDKVideoTestTests */,
+				4BC886021DC1FD180087EC2F /* AliyunSDKVideoTestUITests */,
+				4BC885DC1DC1FD180087EC2F /* Products */,
+				9FF57E12D2DE590996EA52B0 /* Pods */,
+				476A9080F558A7176B38A214 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BC885DC1DC1FD180087EC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC885DB1DC1FD180087EC2F /* AliyunSDKVideoTest.app */,
+				4BC885F41DC1FD180087EC2F /* AliyunSDKVideoTestTests.xctest */,
+				4BC885FF1DC1FD180087EC2F /* AliyunSDKVideoTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC885DD1DC1FD180087EC2F /* AliyunSDKVideoTest */ = {
+			isa = PBXGroup;
+			children = (
+				4BC886411DC208840087EC2F /* Images */,
+				4BC886111DC1FD4B0087EC2F /* AliyunPlayerSDK.framework */,
+				4BC886171DC1FD9F0087EC2F /* AliVcMoiveViewController.h */,
+				4BC886161DC1FD9F0087EC2F /* AliVcMoiveViewController.m */,
+				4BF9D45B1DC75A1200E644D5 /* XHNetwork.h */,
+				4BF9D45C1DC75A1200E644D5 /* XHNetwork.m */,
+				4BC885E11DC1FD180087EC2F /* AppDelegate.h */,
+				4BC885E21DC1FD180087EC2F /* AppDelegate.m */,
+				4BC886181DC1FD9F0087EC2F /* VideoListViewController.h */,
+				4BC886191DC1FD9F0087EC2F /* VideoListViewController.m */,
+				4BC885E41DC1FD180087EC2F /* ViewController.h */,
+				4BC885E51DC1FD180087EC2F /* ViewController.m */,
+				4BC886131DC1FD840087EC2F /* Reachability.h */,
+				4BC886141DC1FD840087EC2F /* Reachability.m */,
+				4BC8863B1DC1FDC00087EC2F /* 蚂蚁大战.mp4 */,
+				4BC886601DC22C570087EC2F /* 蚂蚁大战.mov */,
+				4BC885E71DC1FD180087EC2F /* Main.storyboard */,
+				4BC885EA1DC1FD180087EC2F /* Assets.xcassets */,
+				4BC885EC1DC1FD180087EC2F /* LaunchScreen.storyboard */,
+				4BC885EF1DC1FD180087EC2F /* Info.plist */,
+				4BC885DE1DC1FD180087EC2F /* Supporting Files */,
+			);
+			path = AliyunSDKVideoTest;
+			sourceTree = "<group>";
+		};
+		4BC885DE1DC1FD180087EC2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BC885DF1DC1FD180087EC2F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BC885F71DC1FD180087EC2F /* AliyunSDKVideoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC885F81DC1FD180087EC2F /* AliyunSDKVideoTestTests.m */,
+				4BC885FA1DC1FD180087EC2F /* Info.plist */,
+			);
+			path = AliyunSDKVideoTestTests;
+			sourceTree = "<group>";
+		};
+		4BC886021DC1FD180087EC2F /* AliyunSDKVideoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC886031DC1FD180087EC2F /* AliyunSDKVideoTestUITests.m */,
+				4BC886051DC1FD180087EC2F /* Info.plist */,
+			);
+			path = AliyunSDKVideoTestUITests;
+			sourceTree = "<group>";
+		};
+		4BC886411DC208840087EC2F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4BC886421DC208840087EC2F /* movieBackward.png */,
+				4BC886431DC208840087EC2F /* movieBackward@2x.png */,
+				4BC886441DC208840087EC2F /* movieBackwardSelected.png */,
+				4BC886451DC208840087EC2F /* movieBackwardSelected@2x.png */,
+				4BC886461DC208840087EC2F /* movieForward.png */,
+				4BC886471DC208840087EC2F /* movieForward@2x.png */,
+				4BC886481DC208840087EC2F /* movieForwardSelected.png */,
+				4BC886491DC208840087EC2F /* movieForwardSelected@2x.png */,
+				4BC8864A1DC208840087EC2F /* moviePause.png */,
+				4BC8864B1DC208840087EC2F /* moviePause@2x.png */,
+				4BC8864C1DC208840087EC2F /* moviePlay.png */,
+				4BC8864D1DC208840087EC2F /* moviePlay@2x.png */,
+				4BC8864E1DC208840087EC2F /* video_brightness_bg@2x.png */,
+				4BC8864F1DC208840087EC2F /* video_num_bg@2x.png */,
+				4BC886501DC208840087EC2F /* video_num_front@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9FF57E12D2DE590996EA52B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B45A317E03EB743DEFDCA19 /* Pods-AliyunSDKVideoTest.debug.xcconfig */,
+				1E9E0CDF6A2B7BB1B6262464 /* Pods-AliyunSDKVideoTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BC885DA1DC1FD180087EC2F /* AliyunSDKVideoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC886081DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTest" */;
+			buildPhases = (
+				17DF559A0D3DAA3F160ABAF7 /* [CP] Check Pods Manifest.lock */,
+				4BC885D71DC1FD180087EC2F /* Sources */,
+				4BC885D81DC1FD180087EC2F /* Frameworks */,
+				4BC885D91DC1FD180087EC2F /* Resources */,
+				4BC886401DC2059B0087EC2F /* Embed Frameworks */,
+				C6DA6CF797D8993FE7041447 /* [CP] Embed Pods Frameworks */,
+				C2AC95CFAEE355258A76203C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AliyunSDKVideoTest;
+			productName = AliyunSDKVideoTest;
+			productReference = 4BC885DB1DC1FD180087EC2F /* AliyunSDKVideoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BC885F31DC1FD180087EC2F /* AliyunSDKVideoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC8860B1DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTestTests" */;
+			buildPhases = (
+				4BC885F01DC1FD180087EC2F /* Sources */,
+				4BC885F11DC1FD180087EC2F /* Frameworks */,
+				4BC885F21DC1FD180087EC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC885F61DC1FD180087EC2F /* PBXTargetDependency */,
+			);
+			name = AliyunSDKVideoTestTests;
+			productName = AliyunSDKVideoTestTests;
+			productReference = 4BC885F41DC1FD180087EC2F /* AliyunSDKVideoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BC885FE1DC1FD180087EC2F /* AliyunSDKVideoTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC8860E1DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTestUITests" */;
+			buildPhases = (
+				4BC885FB1DC1FD180087EC2F /* Sources */,
+				4BC885FC1DC1FD180087EC2F /* Frameworks */,
+				4BC885FD1DC1FD180087EC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC886011DC1FD180087EC2F /* PBXTargetDependency */,
+			);
+			name = AliyunSDKVideoTestUITests;
+			productName = AliyunSDKVideoTestUITests;
+			productReference = 4BC885FF1DC1FD180087EC2F /* AliyunSDKVideoTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BC885D31DC1FD180087EC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = xiaohui;
+				TargetAttributes = {
+					4BC885DA1DC1FD180087EC2F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RHYXLE7GFE;
+						ProvisioningStyle = Automatic;
+					};
+					4BC885F31DC1FD180087EC2F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BC885DA1DC1FD180087EC2F;
+					};
+					4BC885FE1DC1FD180087EC2F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BC885DA1DC1FD180087EC2F;
+					};
+				};
+			};
+			buildConfigurationList = 4BC885D61DC1FD180087EC2F /* Build configuration list for PBXProject "AliyunSDKVideoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BC885D21DC1FD180087EC2F;
+			productRefGroup = 4BC885DC1DC1FD180087EC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BC885DA1DC1FD180087EC2F /* AliyunSDKVideoTest */,
+				4BC885F31DC1FD180087EC2F /* AliyunSDKVideoTestTests */,
+				4BC885FE1DC1FD180087EC2F /* AliyunSDKVideoTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BC885D91DC1FD180087EC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC886521DC208840087EC2F /* movieBackward@2x.png in Resources */,
+				4BC886561DC208840087EC2F /* movieForward@2x.png in Resources */,
+				4BC8865A1DC208840087EC2F /* moviePause@2x.png in Resources */,
+				4BC8865F1DC208840087EC2F /* video_num_front@2x.png in Resources */,
+				4BC8865C1DC208840087EC2F /* moviePlay@2x.png in Resources */,
+				4BC886541DC208840087EC2F /* movieBackwardSelected@2x.png in Resources */,
+				4BC886591DC208840087EC2F /* moviePause.png in Resources */,
+				4BC885EE1DC1FD180087EC2F /* LaunchScreen.storyboard in Resources */,
+				4BC885EB1DC1FD180087EC2F /* Assets.xcassets in Resources */,
+				4BC8865D1DC208840087EC2F /* video_brightness_bg@2x.png in Resources */,
+				4BC886611DC22C570087EC2F /* 蚂蚁大战.mov in Resources */,
+				4BC8865B1DC208840087EC2F /* moviePlay.png in Resources */,
+				4BC886571DC208840087EC2F /* movieForwardSelected.png in Resources */,
+				4BC886531DC208840087EC2F /* movieBackwardSelected.png in Resources */,
+				4BC8865E1DC208840087EC2F /* video_num_bg@2x.png in Resources */,
+				4BC8863C1DC1FDC00087EC2F /* 蚂蚁大战.mp4 in Resources */,
+				4BC886551DC208840087EC2F /* movieForward.png in Resources */,
+				4BC885E91DC1FD180087EC2F /* Main.storyboard in Resources */,
+				4BC886581DC208840087EC2F /* movieForwardSelected@2x.png in Resources */,
+				4BC886511DC208840087EC2F /* movieBackward.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885F21DC1FD180087EC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885FD1DC1FD180087EC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17DF559A0D3DAA3F160ABAF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AC95CFAEE355258A76203C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliyunSDKVideoTest/Pods-AliyunSDKVideoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DA6CF797D8993FE7041447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AliyunSDKVideoTest/Pods-AliyunSDKVideoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BC885D71DC1FD180087EC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC885E61DC1FD180087EC2F /* ViewController.m in Sources */,
+				4BC885E31DC1FD180087EC2F /* AppDelegate.m in Sources */,
+				4BC886151DC1FD840087EC2F /* Reachability.m in Sources */,
+				4BC885E01DC1FD180087EC2F /* main.m in Sources */,
+				4BC8861B1DC1FD9F0087EC2F /* VideoListViewController.m in Sources */,
+				4BF9D45D1DC75A1200E644D5 /* XHNetwork.m in Sources */,
+				4BC8861A1DC1FD9F0087EC2F /* AliVcMoiveViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885F01DC1FD180087EC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC885F91DC1FD180087EC2F /* AliyunSDKVideoTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC885FB1DC1FD180087EC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC886041DC1FD180087EC2F /* AliyunSDKVideoTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BC885F61DC1FD180087EC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC885DA1DC1FD180087EC2F /* AliyunSDKVideoTest */;
+			targetProxy = 4BC885F51DC1FD180087EC2F /* PBXContainerItemProxy */;
+		};
+		4BC886011DC1FD180087EC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC885DA1DC1FD180087EC2F /* AliyunSDKVideoTest */;
+			targetProxy = 4BC886001DC1FD180087EC2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BC885E71DC1FD180087EC2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BC885E81DC1FD180087EC2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BC885EC1DC1FD180087EC2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BC885ED1DC1FD180087EC2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BC886061DC1FD180087EC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BC886071DC1FD180087EC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BC886091DC1FD180087EC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B45A317E03EB743DEFDCA19 /* Pods-AliyunSDKVideoTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliyunSDKVideoTest",
+				);
+				INFOPLIST_FILE = AliyunSDKVideoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BC8860A1DC1FD180087EC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9E0CDF6A2B7BB1B6262464 /* Pods-AliyunSDKVideoTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RHYXLE7GFE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AliyunSDKVideoTest",
+				);
+				INFOPLIST_FILE = AliyunSDKVideoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4BC8860C1DC1FD180087EC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AliyunSDKVideoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AliyunSDKVideoTest.app/AliyunSDKVideoTest";
+			};
+			name = Debug;
+		};
+		4BC8860D1DC1FD180087EC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AliyunSDKVideoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AliyunSDKVideoTest.app/AliyunSDKVideoTest";
+			};
+			name = Release;
+		};
+		4BC8860F1DC1FD180087EC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AliyunSDKVideoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AliyunSDKVideoTest;
+			};
+			name = Debug;
+		};
+		4BC886101DC1FD180087EC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AliyunSDKVideoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xxx.AliyunSDKVideoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AliyunSDKVideoTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BC885D61DC1FD180087EC2F /* Build configuration list for PBXProject "AliyunSDKVideoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC886061DC1FD180087EC2F /* Debug */,
+				4BC886071DC1FD180087EC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC886081DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC886091DC1FD180087EC2F /* Debug */,
+				4BC8860A1DC1FD180087EC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC8860B1DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC8860C1DC1FD180087EC2F /* Debug */,
+				4BC8860D1DC1FD180087EC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC8860E1DC1FD180087EC2F /* Build configuration list for PBXNativeTarget "AliyunSDKVideoTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC8860F1DC1FD180087EC2F /* Debug */,
+				4BC886101DC1FD180087EC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BC885D31DC1FD180087EC2F /* Project object */;
+}
